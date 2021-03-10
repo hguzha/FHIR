@@ -34,7 +34,7 @@ public class ExportTransientUserData extends ExportCheckpointUserData {
             .currentUploadSize(checkPointData.currentUploadSize)
             .uploadCount(checkPointData.uploadCount)
             .lastPageNum(checkPointData.lastPageNum)
-            .lastWritePageNum(checkPointData.lastWritePageNum)
+            .lastWritePageNum(checkPointData.lastWrittenPageNum)
             .build();
     }
 
@@ -62,7 +62,7 @@ public class ExportTransientUserData extends ExportCheckpointUserData {
             transientUserData.totalResourcesNum = this.totalResourcesNum;
             transientUserData.indexOfCurrentTypeFilter = this.indexOfCurrentTypeFilter;
             transientUserData.resourceTypeSummary = this.resourceTypeSummary;
-            transientUserData.lastWritePageNum = this.lastWritePageNum;
+            transientUserData.lastWrittenPageNum = this.lastWritePageNum;
             return transientUserData;
         }
     }
@@ -73,6 +73,6 @@ public class ExportTransientUserData extends ExportCheckpointUserData {
                 + ", uploadId=" + uploadId + ", uploadCount=" + uploadCount + ", cosDataPacks=" + cosDataPacks + ", currentUploadResourceNum="
                 + currentUploadResourceNum + ", currentUploadSize=" + currentUploadSize + ", totalResourcesNum=" + totalResourcesNum
                 + ", indexOfCurrentTypeFilter=" + indexOfCurrentTypeFilter + ", resourceTypeSummary=" + resourceTypeSummary + ", lastWritePageNum="
-                + lastWritePageNum + "]";
+                + lastWrittenPageNum + "]";
     }
 }

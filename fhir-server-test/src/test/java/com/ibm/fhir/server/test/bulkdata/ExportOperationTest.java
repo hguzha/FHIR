@@ -17,6 +17,7 @@ import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.StringReader;
 import java.io.StringWriter;
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
@@ -85,7 +86,12 @@ public class ExportOperationTest extends FHIRServerTestBase {
     private static final int TIMEOUT = 10000;
 
     private static final SSLConnectionSocketFactory sf = generateSSF();
-    private static final HttpRequestRetryHandler rh=new HttpRequestRetryHandler(){@Override public boolean retryRequest(IOException exception,int executionCount,HttpContext context){return executionCount<2;}};
+    private static final HttpRequestRetryHandler rh = new HttpRequestRetryHandler(){
+        @Override
+        public boolean retryRequest(IOException exception,int executionCount,HttpContext context){
+            return executionCount<2;
+        }
+    };
 
     private static final RequestConfig config =
             RequestConfig.custom().setConnectTimeout(TIMEOUT).setConnectionRequestTimeout(TIMEOUT).setSocketTimeout(TIMEOUT).build();
@@ -281,6 +287,7 @@ public class ExportOperationTest extends FHIRServerTestBase {
                 JsonReader jsonReader = JSON_READER_FACTORY.createReader(bais, StandardCharsets.UTF_8)) {
             JsonObject object = jsonReader.readObject();
             JsonArray arr = object.getJsonArray("output");
+            assertNotNull(arr);
             assertTrue(arr.size() > 0);
             for (int i = 0; i < arr.size(); i++) {
                 JsonObject obj = arr.get(i).asJsonObject();
@@ -767,8 +774,13 @@ public class ExportOperationTest extends FHIRServerTestBase {
     @Test(groups = { TEST_GROUP_NAME }, dependsOnMethods = { "testGroup" })
     public void testGroupExportToS3() throws Exception {
         if (ON) {
-            Response response =
-                    doPost(GROUP_VALID_URL.replace("?", savedGroupId2), FHIRMediaType.APPLICATION_FHIR_JSON, FORMAT_NDJSON, Instant.of("2019-01-01T08:21:26.94-04:00"), Arrays.asList("Patient", "Group", "Condition", "Observation"), null, "minio", "minio");
+            Response response = doPost(GROUP_VALID_URL.replace("?", savedGroupId2),
+                    FHIRMediaType.APPLICATION_FHIR_JSON, FORMAT_NDJSON,
+                    Instant.of("2019-01-01T08:21:26.94-04:00"),
+                    Arrays.asList("Patient", "Group", "Condition", "Observation"),
+                    null,
+                    "minio",
+                    "minio");
             assertEquals(response.getStatus(), Response.Status.ACCEPTED.getStatusCode());
 
             // check the content-location that's returned.
@@ -824,7 +836,8 @@ public class ExportOperationTest extends FHIRServerTestBase {
         // Export finished successfully, we should be about to find the "output" part in the message body
         // which includes all the COS objects download urls.
         String body = response.readEntity(String.class);
-        assertTrue(body.contains("output"));
+        JsonObject jsonObject = Json.createReaderFactory(null).createReader(new StringReader(body)).readObject();
+        assertTrue(jsonObject.containsKey("output"));
 
         verifyUrl(body, s3);
     }

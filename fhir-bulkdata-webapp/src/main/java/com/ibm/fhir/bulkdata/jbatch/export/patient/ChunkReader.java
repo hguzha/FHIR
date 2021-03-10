@@ -107,7 +107,7 @@ public class ChunkReader extends AbstractItemReader {
 
         if (checkpoint != null) {
             ExportCheckpointUserData checkPointData = (ExportCheckpointUserData) checkpoint;
-            pageNum = checkPointData.getLastWritePageNum();
+            pageNum = checkPointData.getLastWrittenPageNum();
             stepCtx.setTransientUserData(ExportTransientUserData.fromCheckPointUserData(checkPointData));
         }
 

@@ -114,7 +114,7 @@ public class ChunkReader extends AbstractItemReader {
 
         if (checkpoint != null) {
             ExportCheckpointUserData checkPointData = (ExportCheckpointUserData) checkpoint;
-            pageNum = checkPointData.getLastWritePageNum();
+            pageNum = checkPointData.getLastWrittenPageNum();
             indexOfCurrentTypeFilter = checkPointData.getIndexOfCurrentTypeFilter();
 
             // We use setTransient from checkpoint when we have just uploaded to COS.
