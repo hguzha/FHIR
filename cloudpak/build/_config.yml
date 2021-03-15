@@ -17,7 +17,7 @@ name                     : &name "IBM" # &name is a YAML anchor which can be *re
 description              : &description "FHIR Server Documents"
 url                      : "https://hguzha.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/hguzha/FHIR/cloudpak/build" # the subpath of your site, e.g. "/blog"
-repository               : "FHIR/cloudpak/build"
+repository               : "FHIR"
 relative_permalinks      : false
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -188,7 +188,43 @@ kramdown:
 
 # Collections
 collections:
-    "1.0":
+  #"2018.3.1":
+    #label: "2018.3.1"
+    #output: true
+    #version: true
+    #permalink: /:collection/:categories/:slug/
+    #order: 1
+  #"2019.1.1":
+    #label: "2019.1.1"
+    #output: true
+    #version: true
+    #permalink: /:collection/:categories/:slug/
+    #order: 2
+  #"2019.2.1":
+    #label: "2019.2.1"
+    #output: true
+    #version: true
+    #permalink: /:collection/:categories/:slug/
+    #order: 3
+  #"2019.4":
+    #label: "2019.4"
+    #output: true
+    #version: true
+    #permalink: /:collection/:categories/:slug/
+    #order: 4
+  #"10.0":
+    #label: "10.0"
+    #output: true
+    #version: true
+    #permalink: /:collection/:categories/:slug/
+    #order: 5
+  #"10.1":
+    #label: "10.1"
+    #output: true
+    #version: true
+    #permalink: /:collection/:categories/:slug/
+    #order: 6
+  "1.0":
     label: "1.0"
     output: true
     version: true
@@ -276,7 +312,94 @@ defaults:
       share: false
       comments: false
       mastheadNavItem: Support
-     #_1.0
+  # _2018.3.1
+  #- scope:
+      #path: ""
+      #type: "2018.3.1"
+    #values:
+      #layout: single
+      #read_time: false
+      #author_profile: false
+      #share: false
+      #comment: false
+      #version: true
+      #mastheadNavItem: Documentation
+      #sidebar:
+        #nav: "201831docs"
+  # _2019.1.1
+  #- scope:
+      #path: ""
+      #type: "2019.1.1"
+    #values:
+      #layout: single
+      #read_time: false
+      #author_profile: false
+      #share: false
+      #comment: false
+      #version: true
+      #mastheadNavItem: Documentation
+      #sidebar:
+        #nav: "201911docs"
+  # _2019.2.1
+  #- scope:
+      #path: ""
+      #type: "2019.2.1"
+    #values:
+      #layout: single
+      #read_time: false
+      #author_profile: false
+      #share: false
+      #comment: false
+      #version: true
+      #mastheadNavItem: Documentation
+      #sidebar:
+        #nav: "201921docs"
+  # _2019.4
+  #- scope:
+      #path: ""
+      #type: "2019.4"
+    #values:
+      #layout: single
+      #read_time: false
+      #author_profile: false
+      #share: false
+      #comment: false
+      #version: true
+      #latest: true
+      #mastheadNavItem: Documentation
+      #sidebar:
+        #nav: "20194docs"
+  # _10.0
+  #- scope:
+      #path: ""
+      #type: "10.0"
+    #values:
+      #layout: single
+      #read_time: false
+      #author_profile: false
+      #share: false
+      #comment: false
+      #version: true
+      #latest: true
+      #mastheadNavItem: Documentation
+      #sidebar:
+        #nav: "100docs"
+  # _10.1
+  #- scope:
+      #path: ""
+      #type: "10.1"
+    #values:
+      #layout: single
+      #read_time: false
+      #author_profile: false
+      #share: false
+      #comment: false
+      #version: true
+      #latest: true
+      #mastheadNavItem: Documentation
+      #sidebar:
+        #nav: "101docs"
+   #_1.0
   - scope:
       path: ""
       type: "1.0"
