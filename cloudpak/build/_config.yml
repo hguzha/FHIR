@@ -188,43 +188,7 @@ kramdown:
 
 # Collections
 collections:
-  #"2018.3.1":
-    #label: "2018.3.1"
-    #output: true
-    #version: true
-    #permalink: /:collection/:categories/:slug/
-    #order: 1
-  #"2019.1.1":
-    #label: "2019.1.1"
-    #output: true
-    #version: true
-    #permalink: /:collection/:categories/:slug/
-    #order: 2
-  #"2019.2.1":
-    #label: "2019.2.1"
-    #output: true
-    #version: true
-    #permalink: /:collection/:categories/:slug/
-    #order: 3
-  #"2019.4":
-    #label: "2019.4"
-    #output: true
-    #version: true
-    #permalink: /:collection/:categories/:slug/
-    #order: 4
-  #"10.0":
-    #label: "10.0"
-    #output: true
-    #version: true
-    #permalink: /:collection/:categories/:slug/
-    #order: 5
-  #"10.1":
-    #label: "10.1"
-    #output: true
-    #version: true
-    #permalink: /:collection/:categories/:slug/
-    #order: 6
-  "1.0":
+    "1.0":
     label: "1.0"
     output: true
     version: true
@@ -312,94 +276,7 @@ defaults:
       share: false
       comments: false
       mastheadNavItem: Support
-  # _2018.3.1
-  #- scope:
-      #path: ""
-      #type: "2018.3.1"
-    #values:
-      #layout: single
-      #read_time: false
-      #author_profile: false
-      #share: false
-      #comment: false
-      #version: true
-      #mastheadNavItem: Documentation
-      #sidebar:
-        #nav: "201831docs"
-  # _2019.1.1
-  #- scope:
-      #path: ""
-      #type: "2019.1.1"
-    #values:
-      #layout: single
-      #read_time: false
-      #author_profile: false
-      #share: false
-      #comment: false
-      #version: true
-      #mastheadNavItem: Documentation
-      #sidebar:
-        #nav: "201911docs"
-  # _2019.2.1
-  #- scope:
-      #path: ""
-      #type: "2019.2.1"
-    #values:
-      #layout: single
-      #read_time: false
-      #author_profile: false
-      #share: false
-      #comment: false
-      #version: true
-      #mastheadNavItem: Documentation
-      #sidebar:
-        #nav: "201921docs"
-  # _2019.4
-  #- scope:
-      #path: ""
-      #type: "2019.4"
-    #values:
-      #layout: single
-      #read_time: false
-      #author_profile: false
-      #share: false
-      #comment: false
-      #version: true
-      #latest: true
-      #mastheadNavItem: Documentation
-      #sidebar:
-        #nav: "20194docs"
-  # _10.0
-  #- scope:
-      #path: ""
-      #type: "10.0"
-    #values:
-      #layout: single
-      #read_time: false
-      #author_profile: false
-      #share: false
-      #comment: false
-      #version: true
-      #latest: true
-      #mastheadNavItem: Documentation
-      #sidebar:
-        #nav: "100docs"
-  # _10.1
-  #- scope:
-      #path: ""
-      #type: "10.1"
-    #values:
-      #layout: single
-      #read_time: false
-      #author_profile: false
-      #share: false
-      #comment: false
-      #version: true
-      #latest: true
-      #mastheadNavItem: Documentation
-      #sidebar:
-        #nav: "101docs"
-   #_1.0
+     #_1.0
   - scope:
       path: ""
       type: "1.0"
