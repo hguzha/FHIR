@@ -1,5 +1,5 @@
 ---
-title: "Configuring"
+title: "Creating an IBM FHIR Server"
 excerpt: "Configure your IBM FHIR Server installation."
 categories: installing
 slug: configuring
@@ -9,7 +9,7 @@ toc: true
 ## Prerequisites
 
 Installing an instance of IBM FHIR Server requires an installed IBM FHIR Server Operator.
-See inventory item [ibmFhirServerOperatorSetup](../installing) for instructions to install the IBM FHIR Server Operator.
+See inventory item [Installing](../installing) for instructions to install the IBM FHIR Server Operator.
 
 Installing an instance of IBM FHIR Server requires at least namespace administration privileges. 
 
