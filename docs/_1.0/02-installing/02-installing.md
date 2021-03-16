@@ -72,4 +72,16 @@ To add the IBM Operator Catalog:
 
 The IBM Operator Catalog source is added to the OperatorHub catalog, making the IBM FHIR Server operator available to install.
 
+#### Install Operator
+
+Install the Operator using one of the following methods:
+
+  * Red Hat OpenShift Container Platform web console
+  
+    1. Log into the OpenShift Container Platform web console using your login credentials.
+
+    2. Navigate to OperatorHub and click on the IBM FHIR Server tile.
+
+    3. Click Install.
+
 
