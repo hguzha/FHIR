@@ -74,7 +74,7 @@ The IBM Operator Catalog source is added to the OperatorHub catalog, making the 
 
 #### Install Operator
 
-Install the Operator using one of the following methods:
+Install the Operator using the following method:
 
   * Red Hat OpenShift Container Platform web console
   
