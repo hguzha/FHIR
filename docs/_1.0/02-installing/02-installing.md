@@ -8,7 +8,7 @@ toc: true
 
 The following sections provide instructions about installing IBM FHIR Server on the Red Hat OpenShift Container Platform. The instructions are based on using the OpenShift Container Platform web console and `oc` command line utility.
 
-When deploying in an air-gapped environment see[Air Gap Installation](../air-gap-installation).
+When deploying in an air-gapped environment see [Air Gap Installation](../air-gap-installation).
 
 
 ## Overview
