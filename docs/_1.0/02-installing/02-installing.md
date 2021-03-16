@@ -72,7 +72,7 @@ To add the IBM Operator Catalog:
 
 The IBM Operator Catalog source is added to the OperatorHub catalog, making the IBM FHIR Server operator available to install.
 
-#### Install Operator
+## Install Operator
 
 Install the Operator using one of the following methods:
 
