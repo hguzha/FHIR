@@ -5,9 +5,7 @@ categories: about
 slug: overview
 toc: true
 ---
-# IBM FHIR Server
 
-## Introduction
 
 IBM FHIR Server is capable of processing, validating, and storing healthcare data in an industry-standard format that can be used for running search and other reporting capabilities. Built for the enterprise and offering cloud portability, it's an integral component of a data integration pipeline.
  
