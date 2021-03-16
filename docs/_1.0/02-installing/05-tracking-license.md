@@ -6,7 +6,6 @@ slug: tracking-license
 toc: true
 ---
 
-## Tracking license consumption of IBM FHIR Server
 
 License Service is required for monitoring and measuring license usage of IBM FHIR Server in accord with the pricing rule for containerized environments. Manual license measurements are not allowed. Deploy License Service on all clusters where IBM FHIR Server is installed.
 

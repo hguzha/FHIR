@@ -6,8 +6,6 @@ slug: air-gap-installation
 toc: true
 ---
 
-## Air Gap Installation
-
 Since air gap environments do not have access to the public internet, and therefore no access to DockerHub, the following preparation steps are necessary to make the required images accessable to the Red Hat OpenShift Container Platform cluster.
 
 If the Red Hat OpenShift Container Platform cluster has a Bastion host, ensure that the Bastion host can access:

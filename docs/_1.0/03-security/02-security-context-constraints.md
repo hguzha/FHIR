@@ -7,8 +7,6 @@ toc: true
 ---
 
 
-## SecurityContextConstraints Requirements
-
 By default, the IBM FHIR Server Operator uses the `restricted` SecurityContextConstraints resource.
 
 If desired, the following custom SecurityContextConstraints resource can be applied and used instead.

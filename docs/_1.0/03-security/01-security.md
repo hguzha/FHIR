@@ -6,7 +6,6 @@ slug: security
 toc: true
 ---
 
-## Security
 
 * The IBM FHIR Server is a stateless offering. It is the responsibility of the user to ensure that the proper security measures are established when using the server. 
 

@@ -6,8 +6,6 @@ slug: prerequisites
 toc: true
 ---
 
-## Prerequisites
-
 Red Hat OpenShift Container Platform 4.5 or later installed on one of the following platforms:
 
 * Linux x86_64
