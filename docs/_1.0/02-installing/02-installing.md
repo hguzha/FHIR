@@ -40,7 +40,7 @@ A single namespace per instance also allows for finer control of user accesses.
 
 Before you can install the IBM FHIR Server operator and use it to create instances of IBM FHIR Server, you must have the IBM Operator Catalog available in your cluster.
 
-If you have other IBM products installed in your cluster, then you already have the IBM Operator Catalog available, and you can continue to [installing](../installing) the IBM FHIR Server operator.
+If you have other IBM products installed in your cluster, then you already have the IBM Operator Catalog available, and you can continue installing the IBM FHIR Server operator.
 
 If you are installing IBM FHIR Server as the first IBM product in your cluster, complete the following steps.
 
@@ -72,7 +72,7 @@ To add the IBM Operator Catalog:
 
 The IBM Operator Catalog source is added to the OperatorHub catalog, making the IBM FHIR Server operator available to install.
 
-## Install Operator
+#### Install Operator
 
 Install the Operator using one of the following methods:
 
