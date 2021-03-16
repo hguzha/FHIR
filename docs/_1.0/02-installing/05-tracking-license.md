@@ -1,5 +1,5 @@
 ---
-title: "Tracking license consumption of IBM FHIR Server"
+title: "Tracking License Usage"
 excerpt: "Tracking license."
 categories: installing
 slug: tracking-license
