@@ -9,9 +9,6 @@ toc: true
 * The IBM FHIR Server operator can be installed in an on-line cluster through the OpenShift CLI. 
 * Multiple instances of the IBM FHIR Server operator may be deployed into different namespaces, one per namespace.
 
-
-## Prerequisites
-
 Red Hat OpenShift Container Platform 4.5 or later installed on one of the following platforms:
 
 * Linux x86_64
