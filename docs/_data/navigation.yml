@@ -34,17 +34,17 @@ latestdocs:
         
   - title: Installing and upgrading
     children:
-      - title: "Installing IBM FHIR Server"
-        url: /installing/trying-out/
+      #- title: "Installing IBM FHIR Server"
+       # url: /installing/trying-out/
       - title: "Prerequisites"
         url: /installing/prerequisites/
       - title: "Installing"
         url: /installing/installing/
-      - title: "Configuring"
-        url: /installing/configuring/
       - title: "Air Gap Installation"
         url: /installing/air-gap-installation/
-      - title: "Tracking license consumption of IBM FHIR Server"
+      - title: "Creating an IBM FHIR Server"
+        url: /installing/configuring/
+      - title: "Tracking License Usage"
         url: /installing/tracking-license/
 
   - title: Security
