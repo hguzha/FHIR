@@ -2,7 +2,7 @@
 title: "Creating an IBM FHIR Server"
 excerpt: "Configure your IBM FHIR Server installation."
 categories: installing
-slug: configuring
+slug: creating
 toc: true
 ---
 

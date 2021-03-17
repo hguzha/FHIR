@@ -43,7 +43,7 @@ latestdocs:
       - title: "Air Gap Installation"
         url: /installing/air-gap-installation/
       - title: "Creating an IBM FHIR Server"
-        url: /installing/configuring/
+        url: /installing/creating/
       - title: "Tracking License Usage"
         url: /installing/tracking-license/
 
