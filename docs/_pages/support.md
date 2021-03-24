@@ -13,7 +13,6 @@ sections:
 ---
 ## Support matrix
 
-### Red Hat OpenShift platforms
 
 <br>
 
