@@ -4,10 +4,10 @@ main:
     url: /
 #  - title: "Connectors"
 #    url: /connectors
-  - title: "Tutorials"
-    url: /tutorials/
-  - title: FAQ
-    url: /faq/
+#  - title: "Tutorials"
+ #   url: /tutorials/
+#  - title: FAQ
+#    url: /faq/
 #  - title: APIs...
 #    url: /api/
 #    dropdown:
@@ -23,6 +23,43 @@ main:
 # Sidebar navigation for latest version documentation.
 
 latestdocs:
+  - title: About
+    children:
+      - title: "Introduction"
+        url: /about/overview/
+      - title: "Documentation"
+        url: /about/documentation/
+      - title: "License"
+        url: /about/license/
+      - title: "Release Notes"
+        url: /about/release-notes/
+        
+  - title: Installing and upgrading
+    children:
+      #- title: "Installing IBM FHIR Server"
+       # url: /installing/trying-out/
+      - title: "Prerequisites"
+        url: /installing/prerequisites/
+      - title: "Upgrading"
+        url: /installing/upgrading/
+      - title: "Installing"
+        url: /installing/installing/
+      - title: "Air Gap Installation"
+        url: /installing/air-gap-installation/
+      - title: "Creating an IBM FHIR Server"
+        url: /installing/creating/
+      - title: "Tracking License Usage"
+        url: /installing/tracking-license/
+
+  - title: Security
+    children:
+      - title: "Security"
+        url: /security/security/
+      - title: "SecurityContextConstraints Requirements"
+        url: /security/security-context-constraints/
+        
+# Sidebar navigation for 1.0 version documentation.        
+10docs:
   - title: About
     children:
       - title: "Introduction"
@@ -53,5 +90,5 @@ latestdocs:
         url: /security/security/
       - title: "SecurityContextConstraints Requirements"
         url: /security/security-context-constraints/
-
+        
     
