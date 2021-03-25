@@ -27,12 +27,13 @@ latestdocs:
     children:
       - title: "Introduction"
         url: /about/overview/
+      - title: "What's New"
+        url: /about/whats-new/
       - title: "Documentation"
         url: /about/documentation/
       - title: "License"
         url: /about/license/
-      - title: "Release Notes"
-        url: /about/release-notes/
+  
         
   - title: Installing and upgrading
     children:

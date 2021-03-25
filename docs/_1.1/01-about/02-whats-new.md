@@ -1,12 +1,11 @@
 ---
-title: "Release Notes"
+title: "What's New"
 excerpt: "IBM FHIR Server Release notes."
 categories: about
-slug: release-notes
+slug: whats-new
 toc: true
 ---
 
-## What’s new
 
 ## Core FHIR server
 IBM FHIR Server for IBM Cloud Pak version 1.1.0 deploys with IBM FHIR Server v4.6.1. 
