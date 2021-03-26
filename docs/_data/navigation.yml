@@ -51,6 +51,8 @@ latestdocs:
         url: /installing/creating/
       - title: "Tracking License Usage"
         url: /installing/tracking-license/
+      - title: "Uninstalling"
+        url: /installing/uninstalling/
 
   - title: Security
     children:
