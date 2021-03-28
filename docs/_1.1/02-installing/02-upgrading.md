@@ -8,8 +8,14 @@ toc: true
 
 ### Upgrading to IBM FHIR Server Operator v1.1.0
 
-Starting with IBM FHIR Server Operator v1.1.0, the IBM FHIR Server configuration requires a separate datasource configuration from the fhir-server-config.json configuration file.
+When upgrading to IBM FHIR Server Operator v1.1.0, the IBM_FHIR_SERVER_DATASOURCE and IBM_FHIR_SERVER_CONFIG must be created and updated. Until these secrets key is set, the IBM FHIR Server instance will not be functional.
 
-Before upgrading to IBM FHIR Server Operator v1.1.0, set the IBM_FHIR_SERVER_DATASOURCE secret key as described in [Define IBM FHIR Server configuration](../creating).
+To update the existing secret IBM_FHIR_SERVER_CONFIG, please download the secret to a file - fhir-server-config.json:
 
-Until the IBM_FHIR_SERVER_DATASOURCE secret key is set, the IBM FHIR Server instance will not be functional.
+    1. remove `persistence/jdbc/enableProxyDatasource` from fhir-server-config.json
+    2. remove `persistence/jdbc/dataSourceJndiName` from fhir-server-config.json
+    3. remove `persistence/datasources/<dsid>/connectionProperties` from fhir-server-config.json
+
+Create a new datasource.xml per the create-configuration section in the IBM FHIR Server operator readme.
+
+There is no rollback from the upgrade and changes to the schema.

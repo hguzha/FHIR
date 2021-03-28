@@ -15,9 +15,6 @@ Refer to the IBM FHIR Server releases v4.5.4 through 4.6.1 for details on additi
 *	enhancements to search capabilities and performance
 *	overall improvements to query performance
 *	enhancements to bulk data performance
-
-## Operator
-
-## Summary of changes
-*	bulk export function enabled
-datasource configuration uses Liberty configDropins in place of fhir-server-config.json, refer to (link to upgrade/migration section) for more details
+*	bulk export function 
+*	enabled datasource 
+*	configuration uses Liberty configDropins in place of                  fhir-server-config.json, refer to [IBM FHIR Server Upgrade](../../installing/upgrading) for more details.

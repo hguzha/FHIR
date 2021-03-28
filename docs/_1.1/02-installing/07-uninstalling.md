@@ -32,7 +32,7 @@ You can delete an IBM FHIR Server instance by using the OpenShift Container Plat
 
 ## Uninstalling the catalog
 
-The latest version of the IBM Operator Catalog includes the IBM FHIR Server Operator. If that catalog is installed, you may have skipped creating the ibm-fhir-server-operator-catalog CatalogSource resource, in which case, these instructions to not apply.
+The latest version of the IBM Operator Catalog includes the IBM FHIR Server Operator. If that catalog is installed, you may have skipped creating the ibm-fhir-server-operator-catalog CatalogSource resource, in which case, these instructions do not apply.
 
 1.  Log into the OpenShift Container Platform web console using your login credentials.
 

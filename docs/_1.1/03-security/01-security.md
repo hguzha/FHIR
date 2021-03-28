@@ -6,12 +6,10 @@ slug: security
 toc: true
 ---
 
-* The IBM FHIR Server is a stateless offering. It is the responsibility of the user to ensure that the proper security measures are established when using the server. 
-
 ### Data in motion
 
-* All transports used to interact with IBM FHIR Server must be encrypted. TLS 1.2 is recommended. 
-* Users are expected to use TLS when configuring their IBM FHIR Server to connect with their database instance.
+    To secure all inbound and outbound requests from the IBM FHIR Server are recommended to be encrypted. 
+    Users are recommended to use TLS v1.2
 
 ### Data at rest
 
