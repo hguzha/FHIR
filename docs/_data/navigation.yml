@@ -41,6 +41,8 @@ latestdocs:
        # url: /installing/trying-out/
       - title: "Prerequisites"
         url: /installing/prerequisites/
+      - title: "Limitations"
+        url: /installing/limitations/
       - title: "Upgrading"
         url: /installing/upgrading/
       - title: "Installing"

@@ -6,8 +6,9 @@ slug: prerequisites
 toc: true
 ---
 
-* The IBM FHIR Server operator can be installed in an on-line cluster through the OpenShift CLI. 
-* Multiple instances of the IBM FHIR Server operator may be deployed into different namespaces, one per namespace.
+The IBM FHIR Server operator can be installed in an on-line cluster through the OpenShift CLI.
+ 
+Multiple instances of the IBM FHIR Server operator may be deployed into different namespaces, one per namespace.
 
 Red Hat OpenShift Container Platform 4.6 or later installed on one of the following platforms:
 
@@ -18,9 +19,14 @@ Connectivity to any of the following database systems:
 * IBM Db2 11.5.5 or later
 * PostgreSQL 12.1 or later
 
+
 Connectivity to any of the following event streaming platforms is required if using auditing:
 
 * Kafka 1.0 or later
+
+
+Connectivity to any S3-compatible storage platforms is required if using bulk data.
+
 
 ## Storage
 
@@ -46,10 +52,3 @@ Connectivity to any of the following event streaming platforms is required if us
     
     *Note:* There is an initContainer with the IBM FHIR Server called the IBM FHIR Server Schema Tool. This tool has a small memory footprint used on initialization of a pod and is accounted for in the above capacities.
 
-## Limitations
-
-* The Operator may be deployed into different namespaces, one per namespace.
-* The Operator has limited support for IBM FHIR Server configuration.
-
-
-*Schema upgrades require downtime:* *The IBM FHIR Server requires downtime to complete upgrades of the IBM FHIR Server's relational data. During the upgrade, tables are refreshed, updated and optimized for the workloads that the FHIR specification supports.*

@@ -248,11 +248,11 @@ Use the `oc scale` command to manually scale an IBM FHIR Server deployment.
 
 For the [IBM FHIR Server Schema Tool](https://hub.docker.com/r/ibmcom/ibm-fhir-schematool), the database must be configured with a functional user, which is referred to as FHIRSERVER. 
 
-### Input for Db2
+### Db2
 
 The type must be specified as 'db2', the behavior must be 'onboard', and the corresponding database settings must be input into the json format. The tenant name must be `default`.
 
-  ** Example: persistence.json **
+   Example: persistence.json 
 
   ``` json
   {
@@ -285,11 +285,11 @@ The type must be specified as 'db2', the behavior must be 'onboard', and the cor
 
 For db2, it is recommended that the granted user, and the schemas be configured as uppercase.  Further, the user schema names up to database limited sizes. Whatever is chosen as the schema name must match in the datasource.xml and the fhir-server-config.json. The tenant-key is further used in the fhir-server-config.json to authorize the configuration's access to the fhir schema's data partition.
 
-### Input for Postgres
+### Postgres
 
 The type must be specified as 'postgres', the behavior must be 'onboard', and the corresponding database settings must be input into the json format. The certificate must be the base64 encoding of the trusted Certificate Authority of the Database server.
 
-  ** Example: persistence.json **
+   Example: persistence.json 
 
   ``` json
   {
@@ -319,7 +319,7 @@ The type must be specified as 'postgres', the behavior must be 'onboard', and th
 
 For postgres, it is recommended that the granted user, and the schemas be configured as uppercase.  Further, the user schema names up to database limited sizes. Whatever is chosen as the schema name must match in the datasource.xml and the fhir-server-config.json.
 
-For production usage, the input must be specified as `"ssl": "true". It is not recommended to not use ssl.
+For production usage, the input must be specified as `"ssl": "true"`. It is not recommended to not use ssl.
 
 Note, the schema tool does not support Apache Derby. The configuration does not support multiple tenants.
 
@@ -335,7 +335,7 @@ For db2, the tenantKey must match the entry in persistence.json.
 
 The hints and searchOptimizerOptions must be specified.
 
-** Example: db2 **
+ Example: db2 
 
 ``` json
 "datasources": {
@@ -349,7 +349,7 @@ The hints and searchOptimizerOptions must be specified.
     }
 ```
 
-** Example: postgresql **
+ Example: postgresql 
 
 ``` json
 "datasources": {
@@ -474,7 +474,7 @@ The Trace specification is the WLP specification.
 
 ## Defining the transaction timeout
 
-The timeout controls the transaction timeout used when the IBM FHIR Server cluster connects to the user defined database. This value is the maximum time allowed for transactions started on the server to complete. Any transaction must be complete before this timeout, or the transaction is rolled back. Specify a positive integer followed by a unit of time, which can be hours (h), minutes (m), or seconds (s). For example, specify 30 seconds as 30s. You can include multiple values in a single entry. For example, 1m30s is equivalent to 90 seconds.
+The timeout controls the transaction timeout used when the IBM FHIR Server cluster connects to the user defined database. This value is the maximum time allowed for transactions started on the server to complete. Any transaction must be complete before this timeout, or the transaction is rolled back. Specify a positive integer followed by a unit of time, which can be hours (h), minutes (m), or seconds (s). For example, specify 30 seconds as 30s. You can include multiple values in a single entry. For example, 1m30s is equivalent to 90 seconds. The time out value should not be smaller than 240 seconds.
 
 ## Deleting an instance
 
