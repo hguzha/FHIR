@@ -11,6 +11,11 @@ sections:
   - name: IBM FHIR Server support
     description: Let us know what you think about IBM FHIR Server.
 ---
+
+## IBM Support
+
+As an enterprise customer, benefit from IBM's world-class support refer to [IBM Support](https://www.ibm.com/support/home/)
+
 ## Support matrix
 
 
