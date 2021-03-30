@@ -9,5 +9,4 @@ toc: true
 * The Operator may be deployed into different namespaces, one per namespace.
 * The Operator has limited support for IBM FHIR Server configuration.
 * The Operator does not support prepackaged implementation guides.
-* Schema upgrades require downtime: The IBM FHIR Server requires downtime to complete upgrades of the IBM FHIR Server's relational data. During the upgrade, tables are refreshed, updated and optimized for the workloads that the FHIR specification supports.
-* During the upgrade, the database's schema is updated to support workload for the HL7 FHIR® specification. 
+* Schema upgrades require downtime: The IBM FHIR Server requires downtime to complete upgrades of the IBM FHIR Server's relational data. During the upgrade, the database's schema is updated to support workload for the HL7 FHIR® specification. 
