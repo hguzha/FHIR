@@ -69,4 +69,4 @@ To cause the IBM FHIR Server Operator to use the custom SecurityContextConstrain
     - use
 ```
 
-* The IBM FHIR Server Operator also creates custom ClusterRole, ClusterRoleBinding, Role, RoleBinding, SecurityContextConstraints, and ServiceAccount resources to ensure separation of duties.
+The IBM FHIR Server Operator also creates custom ClusterRole, ClusterRoleBinding, Role, RoleBinding, SecurityContextConstraints, and ServiceAccount resources to ensure separation of duties.

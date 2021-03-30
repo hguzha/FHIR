@@ -7,10 +7,10 @@ toc: true
 ---
 ## Prerequisites
 
-Installing an instance of IBM FHIR Server requires an installed IBM FHIR Server Operator.
+Creating an instance of IBM FHIR Server requires an installed IBM FHIR Server Operator.
 See [Installing](../installing) for instructions to install the IBM FHIR Server Operator.
 
-Installing an instance of IBM FHIR Server requires at least namespace administration privileges. 
+Creating an instance of IBM FHIR Server requires at least namespace administration privileges. 
 
 If you intend to use CLI commands, ensure you have the following installed:
 
@@ -474,18 +474,5 @@ The Trace specification is the WLP specification.
 
 ## Defining the transaction timeout
 
-The timeout controls the transaction timeout used when the IBM FHIR Server cluster connects to the user defined database. This value is the maximum time allowed for transactions started on the server to complete. Any transaction must be complete before this timeout, or the transaction is rolled back. Specify a positive integer followed by a unit of time, which can be hours (h), minutes (m), or seconds (s). For example, specify 30 seconds as 30s. You can include multiple values in a single entry. For example, 1m30s is equivalent to 90 seconds. The time out value should not be smaller than 240 seconds.
+The timeout controls the transaction timeout used when the IBM FHIR Server cluster connects to the user defined database. This value is the maximum time allowed for transactions started on the server to complete. Any transaction must be complete before this timeout, or the transaction is rolled back. Specify a positive integer followed by a unit of time, which can be hours (h), minutes (m), or seconds (s). For example, specify 30 seconds as 30s. You can include multiple values in a single entry. For example, 1m30s is equivalent to 90 seconds. The timeout value should not be smaller than 240 seconds.
 
-## Deleting an instance
-
-Delete an instance of IBM FHIR Server using the Red Hat OpenShift Container Platform web console.
-
-  1. Log into the OpenShift Container Platform web console using your login credentials.
-
-  2. Change the Project to the namespace you want to work with.
-
-  3. Navigate to `Installed Operators` and click on the `IBM FHIR Server` operator.
-
-  4. Navigate to the `IBM FHIR Server` tab and click on the instance you want to delete.
-
-  5. Select `Delete IBMFHIRServer` from the `Actions` menu.

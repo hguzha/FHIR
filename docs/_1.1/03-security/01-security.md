@@ -9,7 +9,7 @@ toc: true
 ### Data in motion
 
 * To secure all inbound and outbound requests from the IBM FHIR Server are recommended to be encrypted. 
-* Users are recommended to use TLS v1.2
+* Users are recommended to use TLS v1.2.
 
 ### Data at rest
 

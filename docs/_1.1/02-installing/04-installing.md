@@ -18,11 +18,11 @@ When deploying in an air-gapped environment see [Air Gap Installation](../air-ga
 Installing IBM FHIR Server has two phases:
 
 1. Install the IBM FHIR Server operator: this will deploy the operator that will install and manage your IBM FHIR Server instances.
-2. Install one or more instances of IBM FHIR Server by using the operator.
+2. Create one or more instances of IBM FHIR Server by using the operator.
 
 ## Before you begin
 
-- Ensure you have set up your environment , including setting up your {{site.data.reuse.openshift_short}}.
+- Ensure you have set up your environment, including setting up your {{site.data.reuse.openshift_short}}.
 - Obtain the connection details for your {{site.data.reuse.openshift_short}} cluster from your administrator.
 
 ## Create a project (namespace)
