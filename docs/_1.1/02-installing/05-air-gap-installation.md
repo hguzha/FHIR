@@ -138,7 +138,7 @@ $ oc patch image.config.openshift.io/cluster --type=merge \
 
 #### 7. Proceed with installation
 
-Now that the air gap installation preparation steps are complete, you may continue with the [IBM FHIR Server Operator installation](../installing).
+Now that the air gap installation preparation steps are complete, you may continue with the [installation](../installing).
 
 ### Using a portable host
 
@@ -310,4 +310,4 @@ $ oc patch image.config.openshift.io/cluster --type=merge \
 
 #### 10. Proceed with installation
 
-Now that the air gap installation preparation steps are complete, you may continue with the installation [IBM FHIR Server Operator installation](../installing).
+Now that the air gap installation preparation steps are complete, you may continue with the [installation](../installing).
