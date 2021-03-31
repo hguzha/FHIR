@@ -5,8 +5,6 @@ categories: about
 slug: whats-new
 toc: true
 ---
-
-
 ## IBM FHIR Server
 
 IBM FHIR Server for IBM Cloud Pak version 1.1.0 deploys with IBM FHIR Server 4.6.1. 
