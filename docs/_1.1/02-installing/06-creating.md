@@ -287,7 +287,7 @@ For db2, it is recommended that the granted user, and the schemas be configured 
 
 ### Postgres
 
-The type must be specified as 'postgres', the behavior must be 'onboard', and the corresponding database settings must be input into the json format. The certificate must be the base64 encoding of the trusted Certificate Authority of the Database server.
+The type must be specified as 'postgresql', the behavior must be 'onboard', and the corresponding database settings must be input into the json format. The certificate must be the base64 encoding of the trusted Certificate Authority of the Database server.
 
    Example: persistence.json 
 

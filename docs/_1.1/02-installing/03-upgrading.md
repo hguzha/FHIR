@@ -17,7 +17,7 @@ The new configuration secret will have the following changes from the existing c
 2. Remove `persistence/jdbc/dataSourceJndiName`
 3. Remove `persistence/datasources/<dsid>/connectionProperties`
 
-* A new IBM_FHIR_SERVER_DATASOURCE secret key must be created. See [Creating the datasource](../creating/#creating-the-datasource) for details.
+* A new IBM_FHIR_SERVER_DATASOURCE secret key must be created. 
 
 Until these secret keys are set, the IBM FHIR Server instance will not be functional.
 
